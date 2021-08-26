@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="C:\project\w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="C:\project\grid.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(248, 255, 255);
+  margin: 0px 0px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color:white;
+  box-shadow: 0 2px 3px -1px rgb(175, 169, 169);
+  height: 84px;
+  margin-top: -20px;
+}
+.logo{
+    float: left;
+  text-align: center;
+  padding: 2px 3px;
+ text-decoration: none;
+ margin-left: 120px;
+ /* padding-top: 10px; */
+
+}
+.logo img{
+  size: 40px;
+  padding-top: 20px;
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  margin-top: -24px;
+ 
+}.dropbtnn{
+    margin-right: 180px;
+    font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin-top: -24px;
+}
+
+ .dropdown:hover .dropbtn {
+color:blue;
+border-bottom: 2px solid blue;
+
+}
+.navbar a:hover{
+  color: blue;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e9e0e0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  
+}
+span{
+  background-color: orange;
+  border-radius: 20%;
+  padding: 4px 5px;
+}.register{
+  border: 1px solid #00a5ec;
+  color: white;
+  background-color: #00a5ec;
+border-radius: 4px;
+height: 30px;
+font-weight: bold;
+margin-right: 160px;
+width: 110px;
+font-size: 15px;
+margin-top: 10px;
+
+}.login{
+text-decoration: none;
+  border: 1px solid #00a5ec;
+  color: #00a5ec;
+  background-color: white;
+border-radius: 4px;
+height: 30px;
+font-weight: bold;
+line-height: 2px;
+margin-top: 10px;
+margin-right: 12px;
+width: 80px;
+font-size: 15px;
+float: left;
+
+}.box{
+    height: 470px;
+    width: 380px;
+    margin-left: 65%;
+    margin-top: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding-top: 20px;
+    background-color: white;
+}a{
+    color: #00a5ec;
+    text-decoration: none;
+}
+.google{
+    margin: auto;
+    border: 1px solid gray;
+    width: 320px;
+    height: 25px;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    color: #575757;
+    border: 1px solid #c2b7b7;
+
+}input{
+    border: 1px solid #c2b7b7;
+} .sign {
+ text-decoration: none;
+ color: white;
+ background-color:#00a5ec ;
+ border: 2px solid #00a5ec;
+ border-radius: 3px;
+ margin-left: 25px;
+ width: 315px;
+ height: 33px;
+ font-size: 15px;
+ font-weight: bold;
+ margin-bottom: 10px;
+ margin-top: -8px;
+}.sign a{
+  color: white;
+
+}
+.left{
+  height: 610px;
+  width: 930px;
+  background-color: yellow;
+  float: left;
+  margin-top: 2px;
+  background-image: url("file://localhost/C:/Users/shree/Downloads/IMG_20210826_103521.jpg");
+}
+
+
+</style>
+</head>
+<body>
+<div class="navbar">
+  
+    <div class="logo">
+    <img src="https://internshala.com/static/images/common/new_internshala_logo.svg" style="width: 100px "></div>
+    
+
+      <div class="clear"></div>
+  <div class="dropdown">
+      
+    <button class="dropbtnn">Login/Register
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="C:\project\student.html">Register as a student</a>
+      <a href="C:\project\employer.html">Register as a employer</a>
+    </div>
+  </div> 
+  <a href="#" style="  margin-top: -14px;">Fresher jobs</a>
+  <div class="dropdown">
+    <button class="dropbtn">Online Trianings<span> offers</span>
+              <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Programming</a>
+        <a href="#">Core Engineering</a>
+        <a href="#">Data Science</a>
+        <a href="#">Design</a>
+      </div>
+    </div> 
+  <div class="dropdown">
+    <button class="dropbtn" >Internships
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">location</a>
+        <a href="#">profille</a>
+        <a href="#">category</a>
+      </div>
+    </div> 
+</div>
+
+<div class="left"></div>
+
+<div class="box">
+
+    <div class="google"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7IR3oWQxRq_eYiJkwZveHmfbzcJoMGngQAmHO6js&usqp=CAU" style="width: 20px;height: 20px;margin-right: 8px;">Sign up with Google</div>
+    <p style="text-align: center;color: grey;">━━━━━━━━━ OR ━━━━━━━━━</p>
+    <label style="margin-left: 25px;">Email</label>
+    <input type="text" placeholder="John@example.com" style="width: 85%;height: 35px;margin-top: 5px;margin-left: 25px;margin-bottom: 15px;" id="email">
+    <label style="margin-left: 25px;">Password</label>
+    <input type="text" placeholder="Must be atleast 6 characters" style="width: 85%;height: 35px;margin-top: 5px;margin-left: 25px;margin-bottom: 15px;" id="pass">
+    <label style="margin-left: 25px;;">First Name</label>
+    <label style="margin-left: 103px;">Last Name</label>
+    <input type="text" placeholder="John" style="width: 39%;height: 35px;margin-top: 5px;margin-left: 25px;" id="first">
+    <input type="text" placeholder="Doe" style="width: 39%;height: 35px;margin-top: 5px;margin-left: 17px;" id="last">
+    <h5 style="float: left;margin-left: 20px;color: #484848;">By signing up, you agree to our &nbsp<h5 class="terms"><a href="https://internshala.com/terms#student">Terms and conditions.</a> </h5></h5>
+    <button class="sign" onclick="savedata()">Sign up </button>
+     <label style="margin-left: 100px;">Already registerd?</label>
+     <label><a href="C:\project\login.html">Login</a> </label>
+  </div>
+
+
+  <div class="parent">
+    <div>
+        <h3>Internships by places</h3>
+        <h4>Internship in India</h4>
+        <h4>Internship in Delhi</h4>
+        <h4>Internship in Bagalore</h4>
+        <h4>Internship in Hyderabad</h4>
+        <h4>Internship in Mumbai</h4>
+        <h4>Internship in Chennai</h4>
+        <h4>Internship in Gurgaon</h4>
+        <h4>Internship in Kolkata</h4>
+        <h4>Virtual Internship </h4>
+    </div>
+
+    <div>
+        <h3>Internship by Stream</h3>
+        <h4>Computer Science Internship</h4>
+        <h4>Electronics Internship</h4>
+        <h4>Mechanical Internship</h4>
+        <h4>Civil Internship</h4>
+        <h4>Marketing Internship</h4>
+        <h4>Chemical Internship</h4>
+        <h4>Finance Internship</h4>
+        <h4>Summer Research Fellowship</h4>
+        <h4>Campus Ambassador Program</h4>
+    </div>
+
+    <div>
+        <h3 class="offer">Online Trainings<h3 class="or"> &nbsp OFFER</h3></h3>
+        <h4>Programming with Python</h4>
+        <h4>Digital Marketing </h4>
+        <h4>Web Development
+        </h4>
+        <h4>Machine Learning
+        </h4>
+        <h4>Advanced Excel
+        </h4>
+        <h4>Ethical Hacking</h4>
+        <h4>AutoCAD
+        </h4>
+        <h4>Creative Writing</h4>
+        <h4>Data Science</h4>
+    </div>
+
+    <div>
+        <h3>About Internshala</h3>
+        <h4>About us</h4>
+        <h4>We're hiring</h4>
+        <h4>Hire interns for your company</h4>
+        <h4>Team Diary</h4>
+        <h4>Blog</h4>
+        <h4>Our Services</h4>
+        <h4>Terms & Conditions</h4>
+        <h4>Privacy</h4>
+        <h4>Contact us</h4>
+    </div>
+</div>
+<hr class="hr">
+<div class="play"><i class="fab fa-google-play fa-2x" style="color: white;margin-top: 10px;"></i>
+    <a href="https://play.google.com/store/apps/details?id=com.internshala.app&referrer=utm_source%3Dplay_footer" class="playy"> Get Android App</a>
+    </div>
+
+   <div class="icon">
+    <a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x" id="ic1" ></i></a>
+    <a href="https://www.twitter.com"> <i class="fab fa-twitter fa-2x"id="ic"></i></a>
+    <a href="https://www.youtube.com"><i class="fab fa-youtube fa-2x" id="ic"></i></a>
+    <a href="https://www.linkedin.com"> <i class="fab fa-linkedin-in fa-2x" id="ic"></i></a>
+</div>
+<h4 class="copy">© Copyright 2021 Internshala</h4>
+</div>
+
+
+
+
+</body>
+</html>
+<script>
+
+function savedata(){
+      localStorage.clear()
+                email=document.getElementById('email').value,
+                password= document.getElementById('pass').value,
+                first = document.getElementById('first').value,
+                last = document.getElementById('last').value
+                if(first=="" || last=="" ||  email=="" || password==""){
+                    alert("Please Fill All Required Field")
+                }else{
+                    alert("Credentials Submitted, Kindly Login!")
+                }
+             
+                localStorage.setItem("email",email)
+                localStorage.setItem("password",password)
+                localStorage.setItem("first",first)
+                localStorage.setItem("last",last)
+                
+                
+        }
+</script>
+<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
