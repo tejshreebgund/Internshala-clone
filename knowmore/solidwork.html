@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:\Users\shree\Desktop\Git\InternshalaClone\grid.css">
+</head>
+<style>
+    .navbar {
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            height: 70px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: -8px;
+            position: sticky;
+            top: 0;
+
+
+        }
+
+        .logo {
+            float: left;
+            text-align: center;
+            padding: 2px 3px;
+            text-decoration: none;
+            margin-left: 120px;
+            padding-top: 10px;
+
+        }.logo img{
+            height: 50px;
+            width: 100px;
+            margin-right: 5px;
+            margin-top: -7px;
+        }
+
+        .navbar a {
+            float: right;
+            font-size: 16px;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: right;
+            overflow: hidden;
+
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: 2px solid #00a5ec;
+            border-radius: 3px;
+            outline: none;
+            color: black;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin-right: 870px;
+            margin-top: 10px;
+
+        }
+
+        .dropdown:hover .dropbtn {
+            color: #00a5ec;
+            border-bottom: 2px solid #00a5ec;
+
+        }
+
+        .navbar a:hover {
+            color: #00a5ec;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #e9e0e0;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+
+
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+
+
+        }
+
+        .train {
+            font-size: 15px;
+            color: grey;
+            margin-left: 5px;
+            float: right;
+            padding-top: 17px;
+        }
+
+        .fresher {
+            margin-top: 5px;
+            margin-right: 40px;
+        }
+    .web_dev_page{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        row-gap: 50px;
+        margin:auto;
+    }
+    #div_back_img{
+        background-image: url("https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/banners-new-ds/banner-575.png");
+        background-size: cover;
+        height: 650px;
+        border-radius: 8px;
+
+    }
+    .web_dev_cont{
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        background-position: top;
+        background-repeat: no-repeat;
+        position: relative;
+        background-image: linear-gradient(rgba(2,142,133,.5));
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .web_dev_cont {
+
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .tr_highlight_section{
+        width: 98%;
+        height:410px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .tr_highlight_section h1{
+      font-family: sans-serif;
+      font-size: 35px;
+      font-weight: 700;
+      text-align: center;
+       
+    }
+    .tr_description{
+        display: grid;
+        justify-content: space-around;
+        row-gap: 10px;
+        height: 100px;
+    }
+    #tr_high_top .tr_description{
+        grid-template-columns:28% 28% 28% ;
+        grid-template-rows:100px 100px 100px;
+    }
+   .tr_img_text{
+    display: flex;
+    flex-direction: row;
+    }
+    .Img_top{
+        width:30%;
+        height: 100%;
+        align-items: center;
+        padding:10px;
+    }
+    .Img_top>img{
+        width: 55px;
+        height: 55px;
+        padding-top: 10px;
+        
+    }
+    .text h3{
+      font-size: 20px;
+      font-family: sans-serif;
+    }
+    .text p{
+      font-size: 18px;
+      font-family: sans-serif;
+      margin-top: -4px;
+    }
+    .web_dev_desc{
+        width: 90%;
+        height: 470px;
+        margin:auto;
+       
+    }
+    .web_dev_desc_text{
+        width: 45%;
+        height: 100%;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+     h2{
+        font-size: 35px;
+        font-family: sans-serif;
+        font-weight: 700;
+        margin-bottom: 0px;
+    }
+   .lower_head h4{
+       font-size: 25px;
+       font-family: sans-serif;
+       margin-bottom: 0px;
+   }
+    p{
+       font-size: 18px;
+       font-family: serif;
+   }
+   .web_dev_desc_img{
+       flex-wrap: wrap;
+       float: right;
+       width: 50%;
+       margin-left:40px;
+      
+   }
+   .web_dev_desc_img>img{
+       width: 90%;
+       height: 100%;
+       align-items: right;
+       padding-left:30px;
+       padding-top: 30px;
+   }
+   .cert_img{
+        width: 50%;
+        height: 100%;
+        float: left;
+    }
+    .cert_img>img{
+        width: 95%;
+        height: 90%;
+        padding-top:20px;
+        padding-left: 0px;
+    }
+   .cert_text{
+        width: 40%;
+        height: 100%;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+   }
+   .cert_text>h2{
+       padding-top: 100px;
+       padding-left: 20px;
+       padding-right: 20px;
+   }
+   #tr_high_bottom {
+       height: 500px;
+   }
+   .tr_wr_img_text{
+       display: flex;
+       flex-direction: column;
+       row-gap: 0px;
+
+   }
+   #tr_high_bottom .tr_description{
+       grid-template-columns:30% 30% 30% ;
+       grid-template-rows:200px 200px 200px;
+   }
+   .Img_top{
+        width:20%;
+        height:120px;
+        justify-content: left;
+    }
+  #tr_syllabus{
+      width: 60%;
+      height: 800px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      margin: auto;
+  }
+  #tr_syllabus h2{
+      display: block;
+      margin: auto;
+      margin-bottom: 20px;
+  }
+  #tr_syllabus p{
+      font-weight: 700;
+  }
+  #tr_syll_desc{
+      width: 90%;
+      height: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content:space-evenly;
+      margin: auto;
+  }
+  .syll_img_text{
+      width: 30%;
+      padding-left:50px ;
+      display: flex;
+      flex-direction: row;
+      column-gap: 10px;
+
+  }
+  
+  .syll_img_text .syll_img{
+      width: 20%;
+      height:90%;
+     
+  }
+  .syll_img>img{
+      width: 40px;
+      height: 40px;
+      align-items: center;
+      justify-content: left;
+  }
+  .syll_text{
+      width: 140px;
+      height: 100%;
+  }
+  .syll_text {
+    
+      text-align: left;
+      padding-top: 5px;
+      font-size: 18px;
+      font-weight: 700;
+  }
+  #syll_box{
+   width: 70%;
+   margin: auto;
+   border: 1px solid grey;
+  }
+  .topic_box{
+      border-bottom: 1px solid grey;
+  }
+  .Main_topic{
+      padding:15px;
+  }
+  li {
+      font-size: 18px;
+      font-weight: 200;
+  }
+  
+    .banner_section{
+        display: flex;
+        flex-direction: column;
+        width: 650px;
+        height:600px;
+        padding-left:0px;
+        margin-top: 50px;
+        color:white;
+
+    }
+  
+    .banner_section{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        margin-left: 0px;
+        margin-right: 0px;
+        float: left;
+        font-family: 'Inter-var',sans-serif;
+    }
+    .banner_section .course_head{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    font-family: "Inter var",sans-serif;
+    text-align: left;
+    }
+    .course_head,#span_heading{
+     font-size: 40px;
+    line-height: 48px;
+    font-weight: 800;
+    margin-top: 16px;
+    }
+
+    .banner_section .cert_tr{
+     width:180px;
+     text-align: center;
+     color: #1B6B60;
+    background-color: #FFD907;
+     font-weight: 600;
+    font-size: 14px;
+    font-family: "Inter var",sans-serif;
+    border-radius: 8px;
+    line-height: 16px;
+    padding-top: calc(8px - 1px);
+    padding-bottom: calc(8px - 1px);
+    padding-left: calc(16px - 1px);
+    padding-right: calc(16px - 1px);
+
+    }
+   
+    .course_img_cont{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .course_img{
+        background-color: white;
+        height: 40px;
+        margin-left: 5px;
+        border-radius: 20px;
+        
+    }
+    .course_img,img{
+     width: 15%;
+     height: 100%;
+     align-items: center;
+     float: left;
+     padding-left: 10px;
+    }
+    .course_img .course_span{
+     height: 100%;
+    font-weight: 600;
+    font-size: 14px;
+    color: #484848;
+    text-align:left;
+    float: right;
+    padding-top:10px;
+    padding-right: 22px;
+
+    }
+    #course_img1>img{
+      width:30%;
+      padding-left: 5px;
+    }
+    #course_img1{
+        width: 70px;
+    
+    
+    }
+    #course_img2{
+        width: 180px;
+    
+    }
+    #course_img3{
+        width: 130px;
+    
+    }
+    #course_img4{
+        width: 230px;
+
+    }
+    #sign_up_section{
+        float: right;
+        padding-right: 20px;
+        border-color: yellow;
+    }
+    .box{
+    height: 350px;
+    width: 450px;
+    margin-top: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+   
+}a{
+    color: #00a5ec;
+    text-decoration: none;
+}
+.google{
+    margin: auto;
+    border: 1px solid gray;
+    width: 320px;
+    height: 25px;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    color: #575757;
+    border: 1px solid #c2b7b7;
+
+}input{
+    border: 1px solid #c2b7b7;
+} .sign {
+ text-decoration: none;
+ color: white;
+ background-color:#00a5ec ;
+ border: 2px solid #00a5ec;
+ border-radius: 3px;
+ margin-left: 25px;
+ width: 400px;
+ height: 40px;
+ font-size: 15px;
+ font-weight: bold;
+ margin-bottom: 10px;
+ margin-top: 20px;
+}.sign a{
+  color: white;
+
+}
+.clr_float{
+    clear: both;
+}.email{
+    margin-left: 25px;
+    color: black;
+}
+   
+</style>
+<body>
+    <!-- nav -->
+       
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://internshala.com/static/images/common/new_internshala_logo.svg" />
+            <div class="train"> TRAININGS</div>
+        </div>
+
+
+
+
+        <div class="dropdown">
+            <div class="dropdown-content">
+                <a href="#">Register as a student</a>
+                <a href="#">Register as a employer</a>
+                <a href="#">Login</a>
+            </div>
+        </div>
+        <div class="fresher">
+            <a href="C:\project\navbar.html"><u>Home</u></a>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Online Trianings
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Programming</a>
+                <a href="#">Core Engineering</a>
+                <a href="#">Data Science</a>
+                <a href="#">Design</a>
+            </div>
+        </div>
+</div>
+    <!-- nav -->
+
+
+
+    <div class="web_dev_page">
+        <div id="div_back_img">
+    <div class="web_dev_cont">
+        <div class="banner_section">
+            <div class="cert_tr">Certified online training</div>
+            <h1 class="course_head"><span id="span_heading">Learn SOLIDWORKS <br></span></h1>
+            <p class="course_brief">Begin your journey as 3D design engineer</p>
+             <div class="course_img_cont">
+            <div id="course_img1"class="course_img">
+                 <img src="https://trainings.internshala.com/static/images/icons/star.svg"><span class="course_span">4.1</span>
+             </div>
+             <div id="course_img2" class="course_img">
+                <img src="https://trainings.internshala.com/static/images/icons/enrolled-students.svg"><span  class="course_span">56,008 Students</span>
+            </div>
+            <div id="course_img3" class="course_img">
+                <img src="https://trainings.internshala.com/static/images/icons/calendar.svg"><span  class="course_span">6 Weeks</span>
+            </div>
+            <div id="course_img4" class="course_img">
+                <img src="	https://trainings.internshala.com/static/images/icons/placement-assistace.svg"><span  class="course_span"> Placement Assistance</span>
+            </div>
+            </div>
+        </div>
+            <div id="sign_up_section">
+                <div class="box">
+
+                   
+                    <label style="margin-left: 25px;">Mobile Number :</label>
+                    <input type="text" placeholder="+91 1234567890" style="width: 85%;height: 35px;margin-top: 5px;margin-left: 25px;margin-bottom: 15px;" id="email">
+                    <label style="margin-left: 25px;">Batch</label>
+                    <select name="bjyfg" id="" style="width: 87%;height: 35px;margin-top: 5px;margin-left: 25px;margin-bottom: 15px;">
+                    <option>Choose Batch</option>
+                    <option>1 Sep, 2021</option>
+                    <option>15 Sep, 2021</option>
+                    <option>1 Oct, 2021</option>
+                    <option>15 Oct, 2021</option>
+                    <option>1 Nov, 2021</option>
+                    <option>15 Nov, 2021</option>
+                </select>
+                <label style="margin-left: 25px;">I want to learn this to :</label>
+                    <select name="bjyfg" id="" style="width: 87%;height: 35px;margin-top: 5px;margin-left: 25px;margin-bottom: 15px;">
+                        <option>Choose your objective</option>
+                        <option>Gain a new skill</option>
+                        <option>Build my own project</option>
+                        <option>Get an internship/job in future.</option>
+                        <option>Gain a certifcate</option>
+                        <option>Fulfil college requirement.</option>
+                        </select>
+                        <div class="email" style="font-size: 25px;float: left;color: #484848;">  <strike>₹4499</strike></div>
+                        <div style="font-size: 25px;color: #ff8c00;float: left;" > &nbsp 1349/-</div>
+                        <div style="color: #484848;margin-top: 10px;">&nbsp Valid till 30th Aug</div>
+                   
+                    <button class="sign"><a href="C:\Users\shree\Desktop\Git\InternshalaClone\webdev2.html">Sign up </a> </button>
+                   </div>
+            
+            </div>
+            </div>
+            <div class="clr_float"></div>
+        </div>
+
+        <div id="tr_high_top" class="tr_highlight_section">
+            <h1>Training Highlights</h1>
+            <div class="tr_description">
+            <div class="tr_img_text">
+            <div class="Img_top"><img src="https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/training_highlight_icons_tmt/learn_from_home.png"></div>
+            <div class="text"><h3>Learn from home</h3><p>Stay safe indoors</p></div>
+        </div>
+        <div class="tr_img_text">
+            <div class="Img_top"><img src="https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/training_highlight_icons_tmt/beginner_friendly.png"></div>
+            <div class="text"><h3>Certificate of Training</h3><p>from Internshala Trainings</p></div>
+        </div>
+        <div class="tr_img_text">
+            <div class="Img_top"><img src="https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/training_highlight_icons_tmt/placement_assistance.png"></div>
+            <div class="text"><h3>Placement assistance</h3><p>To build your career</p></div>
+        </div>
+        <div class="tr_img_text">
+            <div  class="Img_top"><img src="https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/training_highlight_icons_tmt/video_tutorials.png"></div>
+            <div class="text"><h3>138 video tutorials</h3><p>138 video tutorials</p></div>
+        </div>
+        <div class="tr_img_text">
+            <div  class="Img_top"><img src="https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/training_highlight_icons_tmt/projects.png"></div>
+            <div class="text"><h3>Build 1 project</h3><p>For hands-on practice</p></div>
+        </div>
+        <div class="tr_img_text">
+            <div  class="Img_top"><img src="https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/training_highlight_icons_tmt/doubt_clearing.png"></div>
+            <div class="text"><h3>Doubt clearing</h3><p>Through Q&A forum</p></div>
+        </div>
+        <div class="tr_img_text">
+            <div  class="Img_top"><img src="https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/training_highlight_icons_tmt/beginner_friendly.png"></div>
+            <div class="text"><h3>Beginner friendly</h3><p>No prior knowledge required</p></div>
+        </div>
+        <div class="tr_img_text">
+            <div  class="Img_top"><img src="https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/training_highlight_icons_tmt/weeks.png"></div>
+            <div class="text"><h3>8 weeks access</h3><p>To the platform</p></div>
+        </div>
+        <div class="tr_img_text">
+            <div  class="Img_top"><img src="https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/training_highlight_icons_tmt/downloadable_content.png"></div>
+            <div class="text"><h3>Downloadable content</h3><p>With lifetime access</p></div>
+        </div>
+        </div>
+        </div>
+       <!--- why learn section-->
+       <div id="why_learn_sec" class="web_dev_desc">
+        <div class="web_dev_desc_text">
+            <h2>Why learn Web Development?</h2>
+            <div class="lower_head">
+            <h4>Build awesome websites</h4>
+            <p>Mark Zuckerberg built Facebook. Sachin Bansal built Flipkart. What will you build?</p>
+        </div>
+        <div class="lower_head">
+            <h4>Be in demand</h4>
+            <p>With 1.7 billion websites on the internet, it is one of the hottest career options with an average fresher salary of 6 LPA for full stack developers according to Glassdoor.</p>
+        </div>
+        <div class="lower_head">
+            <h4>Eat-Sleep-Code-Repeat</h4>
+            <p>Be it rain or sunshine, coding is always on your mind.</p>
+        </div>
+        </div>
+        <div class="web_dev_desc_img">
+            <img src="https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/illustration-images/why-learn.png">
+        </div>
+        </div>
+<!---certifiacte section-->
+        <div id="certificate_section" class="web_dev_desc">
+            <div class="cert_img"><img src="https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/illustration-images/certificate.png"></div>
+            <div class="cert_text"><h2>Industry recognized certificate</h2><p>100,000+ companies use Internshala for hiring every year. So a certificate from Internshala is recognized everywhere.</p></div>
+            </div>
+<!--how will training work section-->
+            <div id="tr_high_bottom"  class="tr_highlight_section">
+                <h1>How will your training work?</h1>
+                <div class="tr_description">
+                <div class="tr_wr_img_text">
+                <div class="Img_bot"><img src="https://trainings.internshala.com/static/images/signup_ab/features/icons-l/videos.png"></div>
+                <div class="text"><h3>Learn concepts</h3><p>Go through training videos to learn concepts</p></div>
+                </div>
+                <div  class="tr_wr_img_text">
+                <div  class="Img_bot"><img src="https://trainings.internshala.com/static/images/signup_ab/features/icons-l/assignments.png"></div>
+                <div class="text"><h3>Test yourself</h3><p>Test your knowledge through quizzes & module tests at regular intervals</p></div>
+                </div>
+                <div class="tr_wr_img_text">
+                <div class="Img_bot"><img src="https://trainings.internshala.com/static/images/signup_ab/features/icons-l/practice.png"></div>
+                <div class="text"><h3>Hands-on practice</h3><p>Work on assignments and projects. Use our in-browser IDE for coding practice</p></div>
+                </div>
+                <div class="tr_wr_img_text">
+                <div  class="Img_bot"><img src="https://trainings.internshala.com/static/images/signup_ab/features/icons-l/doubt_clearing.png"></div>
+                <div class="text"><h3>1:1 doubt solving</h3><p>Get your doubts solved by experts through Q&A forum within 24 hours</p></div>
+                </div>
+                <div class="tr_wr_img_text">
+                <div  class="Img_bot"><img src="https://trainings.internshala.com/static/images/signup_ab/features/icons-l/test.png"></div>
+                <div class="text"><h3>Take final exam</h3><p>Complete your training by taking the final exam</p></div>
+                </div>
+                <div class="tr_wr_img_text">
+                <div  class="Img_bot"><img src="https://trainings.internshala.com/static/images/signup_ab/features/icons-l/certificate.png"></div>
+                <div class="text"><h3>Get certified</h3><p>Get certified in Web Development upon successful completion of training</p></div>
+                </div>
+                </div>
+                </div>
+                <!--training syllabus-->     
+                <div id="tr_syllabus">
+                    <h2>Training syllabus</h2>
+                    <div id="tr_syll_desc">
+                        <div class="syll_img_text">
+                            <div class="syll_img"><img src="https://trainings.internshala.com/static/images/signup_ab/features/icons-s/videos.png"></div>
+                            <div class="syll_text">92 video tutorials</div>
+                        </div>
+                        <div  class="syll_img_text">
+                            <div class="syll_img"><img src="https://trainings.internshala.com/static/images/signup_ab/features/icons-s/assignments.png"></div>
+                            <div class="syll_text">3 assignments</div>
+                        </div>
+                        <div  class="syll_img_text">
+                            <div class="syll_img"><img src="https://trainings.internshala.com/static/images/signup_ab/features/icons-s/projects.png"></div>
+                            <div class="syll_text">1 project</div>
+                        </div>
+                    </div>
+                    <p>After completing the training, you can also download videos for future reference</p>
+                    <div id="syll_box">
+                        <div class="topic_box">
+                            <div><p class="Main_topic">HTML</p></div>
+                            <ul>
+                                <li>6 Topics</li>
+                                <li>Demo video inside</li>
+                            </ul>  
+                        </div>
+                        <div class="topic_box">
+                        <div><p class="Main_topic">CSS</p></div>
+                        <ul>
+                            <li>11 Topics</li>
+                            <li>Demo video inside</li>
+                        </ul>  
+                    </div>
+                <div class="topic_box">
+                <div><p class="Main_topic">Bootstrap</div>
+                <ul>
+                    <li>3 Topics</li>
+                </ul>  
+                </div>
+                <div class="topic_box">
+                <div><p class="Main_topic">DBMS</p></div>
+                <ul>
+                    <li>Topics</li>
+                    <li>1 Demo video inside</li>
+                </ul>  
+                </div>
+                <div class="topic_box">
+                <div><p class="Main_topic">PHP</p></div>
+                <ul>
+                    <li>10 Topics</li>
+                </ul>  
+                </div>
+                 </div>
+                </div>
+    </div>
+    <br>
+<div class="clear"></div>
+        <!-- grid -->
+        <div class="parent" style="margin-top: 100px;">
+            <div>
+                <h3>Internships by places</h3>
+                <h4>Internship in India</h4>
+                <h4>Internship in Delhi</h4>
+                <h4>Internship in Bagalore</h4>
+                <h4>Internship in Hyderabad</h4>
+                <h4>Internship in Mumbai</h4>
+                <h4>Internship in Chennai</h4>
+                <h4>Internship in Gurgaon</h4>
+                <h4>Internship in Kolkata</h4>
+                <h4>Virtual Internship </h4>
+            </div>
+    
+            <div>
+                <h3>Internship by Stream</h3>
+                <h4>Computer Science Internship</h4>
+                <h4>Electronics Internship</h4>
+                <h4>Mechanical Internship</h4>
+                <h4>Civil Internship</h4>
+                <h4>Marketing Internship</h4>
+                <h4>Chemical Internship</h4>
+                <h4>Finance Internship</h4>
+                <h4>Summer Research Fellowship</h4>
+                <h4>Campus Ambassador Program</h4>
+            </div>
+    
+            <div>
+                <h3 class="offer">Online Trainings</h3>
+                <h4>Programming with Python</h4>
+                <h4>Digital Marketing </h4>
+                <h4>Web Development
+                </h4>
+                <h4>Machine Learning
+                </h4>
+                <h4>Advanced Excel
+                </h4>
+                <h4>Ethical Hacking</h4>
+                <h4>AutoCAD
+                </h4>
+                <h4>Creative Writing</h4>
+                <h4>Data Science</h4>
+            </div>
+    
+            <div>
+                <h3>About Internshala</h3>
+                <h4>About us</h4>
+                <h4>We're hiring</h4>
+                <h4>Hire interns for your company</h4>
+                <h4>Team Diary</h4>
+                <h4>Blog</h4>
+                <h4>Our Services</h4>
+                <h4>Terms & Conditions</h4>
+                <h4>Privacy</h4>
+                <h4>Contact us</h4>
+            </div>
+        </div>
+        <hr class="hr">
+        <div class="play"><i class="fab fa-google-play fa-2x" style="color: white;margin-top: 10px;"></i>
+            <a href="https://play.google.com/store/apps/details?id=com.internshala.app&referrer=utm_source%3Dplay_footer" class="playy"> Get Android App</a>
+            </div>
+    
+           <div class="icon">
+            <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram fa-2x" id="ic1" ></i></a>
+            <a href="https://www.twitter.com"> <i class="fab fa-twitter fa-2x"id="ic"></i></a>
+            <a href="https://www.youtube.com"><i class="fab fa-youtube fa-2x" id="ic"></i></a>
+            <a href="https://www.linkedin.com"> <i class="fab fa-linkedin-in fa-2x" id="ic"></i></a>
+        </div>
+        <h4 class="copy">© Copyright 2021 Internshala</h4>
+        <!-- grid -->
+</body>
+</html>
+<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+<script>
+</script>
