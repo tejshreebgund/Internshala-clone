@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Slider using Flickity Plugin | HackerRahul.com</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="C:\Users\shree\Desktop\Git\InternshalaClone\grid.css">
+  <style media="screen">
+  .carousel-cell {
+    width: 100%;
+    }
+
+    .carousel-cell:before {
+      display: block;
+    }
+    
+    .navbar {
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            height: 70px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: -8px;
+
+        }
+
+        .logo {
+            float: left;
+            text-align: center;
+            padding: 2px 3px;
+            text-decoration: none;
+            margin-left: 120px;
+            padding-top: 10px;
+
+        }
+
+        .navbar a {
+            float: right;
+            font-size: 16px;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: right;
+            overflow: hidden;
+
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: 2px solid #00a5ec;
+            border-radius: 3px;
+            outline: none;
+            color: black;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin-right: 870px;
+            margin-top: 10px;
+
+        }
+
+        .dropdown:hover .dropbtn {
+            color: #00a5ec;
+            border-bottom: 2px solid #00a5ec;
+
+        }
+
+        .navbar a:hover {
+            color: #00a5ec;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #e9e0e0;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+
+
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+
+
+        }
+
+        .train {
+            font-size: 15px;
+            color: grey;
+            margin-left: 5px;
+            float: right;
+            padding-top: 17px;
+        }
+
+        .fresher {
+            margin-top: 5px;
+            margin-right: 40px;
+        }
+    h2{
+      text-align: center;
+      font-family: sans-serif;
+  
+    }
+    p{
+      color: gray;
+      font-family: sans-serif;
+    }
+     .container{
+       display: flex;
+       margin-right: 20px;
+       margin-left: 100px;
+       margin-bottom: 80px;
+       width:1300px;
+       height: 330px;
+       
+     }
+     .items{
+       width: 350px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+      margin-right: 20px;
+       margin-left: 20px;
+       align-items: center;
+     }
+     hr{
+       color: gray;
+     }
+     .centre{
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+     }
+     .link{
+       float:right;
+       padding-right: 10px;
+       margin-top: 5px;
+     }.link1{
+       float: left;
+       margin-top: 5px;
+       margin-left: 8px;
+       font-size: 16px;
+       color: rgb(71, 62, 62);
+     }
+     .head{
+         margin-left: 120px;
+         font-size: 20px;
+         font-weight: bold;
+     }.midline{
+      border-left: 1px solid rgb(145, 151, 145);
+      height: 55px;
+      margin-left: 137px;
+      margin-top: -29px;
+     }
+     
+  </style>
+  <body>
+      <!-- nav -->
+      
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://internshala.com/static/images/common/new_internshala_logo.svg" />
+            <div class="train"> TRAININGS</div>
+        </div>
+
+
+
+
+        <div class="dropdown">
+            <div class="dropdown-content">
+                <a href="#">Register as a student</a>
+                <a href="#">Register as a employer</a>
+                <a href="#">Login</a>
+            </div>
+        </div>
+        
+        <div class="fresher">
+            <a href="C:\Users\shree\Desktop\Git\InternshalaClone\Final.html">Logout</a>
+        </div>
+ 
+
+        <div class="dropdown">
+            <button class="dropbtn">Online Trianings
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="C:\Users\shree\Desktop\Git\InternshalaClone\knowmore\python.html">Programming</a>
+                <a href="C:\Users\shree\Desktop\Git\InternshalaClone\knowmore\autocad3d.html">Core Engineering</a>
+                <a href="C:\Users\shree\Desktop\Git\InternshalaClone\knowmore\solidwork.html">Data Science</a>
+                <a href="C:\Users\shree\Desktop\Git\InternshalaClone\knowmore\graphicdesign.html">Design</a>
+            </div>
+        </div>
+</div>
+      <!-- nav -->
+
+      
+
+
+    <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+      
+      <div class="carousel-cell">
+        <img class="w3-image"style="width: 100%;" src="file://localhost/C:/Users/shree/Downloads/WhatsApp%20Image%202021-08-27%20at%2011.55.51%20PM.jpeg">
+      </div>
+      <div class="carousel-cell">
+        <img class="w3-image" style="width: 100%;" src="file://localhost/C:/Users/shree/Downloads/WhatsApp%20Image%202021-08-27%20at%2011.55.51%20PM%20(1).jpeg">
+      </div>
+  </div><br>
+    <h2>Online Trainings we offer:</h2>    
+    <p class="head">Most Popular (4)</p>
+    <div class="container">
+ 
+      
+      <div class="items" >
+        <img src="https://trainings.internshala.com/static/images/home/web-development.jpg"/>
+        <h4 style="text-align: center;">Web Development</h4>
+        <p style="text-align: center;">Learn how to create a website from scratch</p>
+        <hr>
+        <a class="link" href="C:\Users\shree\Desktop\Git\InternshalaClone\webdev.html">KNOW MORE</a>
+        <a class="link1">Duration 6 weeks <p class="midline"></p> </a>
+      </div>
+    
+        <div class="items">
+          <img src="https://trainings.internshala.com/static/images/home/digital-marketing.jpg"/>
+          <h4 style="text-align: center;">Digital Marketing</h4>
+          <p style="text-align: center;">&nbsp &nbsp &nbsp Learn SEO,Search Engine Marketting</p>
+          <hr>
+          <a class="link" href="C:\Users\shree\Desktop\Git\InternshalaClone\knowmore\digitalmarketing.html">KNOW MORE</a>
+          <a class="link1">Duration 4 weeks <p class="midline"></p></a>
+        </div>
+        
+          <div class="items">
+            <img class="centre" src="https://trainings.internshala.com/static/images/home/python.jpg"/>
+            <h4 style="text-align: center;">Programming with python</h4>
+            <p style="text-align: center;">Build a fantasy cricket game using python language</p>
+            <hr>
+            <a class="link" href="C:\Users\shree\Desktop\Git\InternshalaClone\knowmore\python.html">KNOW MORE</a>
+            <a class="link1">Duration 8 weeks <p class="midline"></p></a>
+          </div>
+        
+            <div class="items">
+              <img class="center" src="https://trainings.internshala.com/static/images/home/excel.jpg"/>
+              <h4 style="text-align: center;">Advance Excel</h4>
+              <p style="text-align: center;">Learn how to use Microsoft Excel from scratch</p>
+              <hr>
+              <a class="link" href="C:\Users\shree\Desktop\Git\InternshalaClone\knowmore\excel.html">KNOW MORE</a>
+              <a class="link1">Duration 6 weeks <p class="midline"></p></a>
+            </div>
+            
+
+    </div>
+    <p class="head">Programming(4)</p>
+    <div class="container">
+      
+      <div class="items">
+        <img class="centre" src="https://trainings.internshala.com/static/images/home/python.jpg"/>
+        <h4 style="text-align: center;">Programming with python</h4>
+        <p style="text-align: center;">Build a fantasy cricket game using python language</p>
+        <hr>
+        <a class="link" href="C:\Users\shree\Desktop\Git\InternshalaClone\knowmore\python.html">KNOW MORE</a>
+        <a class="link1">Duration 4 weeks <p class="midline"></p></a>
+      </div>
+      <div class="items">
+        <img src="https://trainings.internshala.com/static/images/home/web-development.jpg" class="centre"/>
+        <h4 style="text-align: center;">Web Development</h4>
+        <p style="text-align: center;">Learn how to create a website from scratch</p>
+        <hr>
+        <a class="link" href="C:\Users\shree\Desktop\Git\InternshalaClone\webdev.html">KNOW MORE</a>
+        <a class="link1">Duration 6 weeks <p class="midline"></p></a>
+      </div>
+    
+      <div class="items">
+        <img class="centre" src="https://trainings.internshala.com/static/images/home/hacking.jpg" class="centre">
+        <h4 style="text-align: center;">Ethical Hacking</h4>
+        <p style="text-align: center;">learn to hack and secure web applications</p>
+        <hr>
+        <a class="link" href="C:\Users\shree\Desktop\Git\InternshalaClone\knowmore\ethicalhack.html">KNOW MORE</a>
+        <a class="link1">Duration 8 weeks <p class="midline"></p></a>
+      </div>
+          <div class="items">
+            <img class="centre" src="https://trainings.internshala.com/static/images/home/java.jpg"/>
+            <h4 style="text-align: center;">Core java</h4>
+            <p style="text-align: center;">&nbsp Develop system application from scratch</p>
+            <hr>
+            <a class="link" href="C:\Users\shree\Desktop\Git\InternshalaClone\knowmore\corejava.html">KNOW MORE</a>
+            <a class="link1">Duration 4 weeks <p class="midline"></p></a>
+          </div>
+    </div>
+
+
+    <p class="head">Core Engineering(4)</p>
+    <div class="container">
+      
+      <div class="items">
+        <img class="centre" src="https://trainings.internshala.com/static/images/home/autocad.jpg"/>
+        <h4 style="text-align: center;">Auto CAD</h4>
+        <p style="text-align: center;">Learn to build 2D drafts 3D models in AutoCAD</p>
+        <hr>
+        <a class="link" href="C:\Users\shree\Desktop\Git\InternshalaClone\knowmore\autocad.html">KNOW MORE</a>
+        <a class="link1">Duration 8 weeks <p class="midline"></p></a>
+      </div>
+      <div class="items">
+        <img src="https://trainings.internshala.com/static/images/home/autocad-three-d.jpg" class="centre"/>
+        <h4 style="text-align: center;">AutoCAD 3D</h4>
+        <p style="text-align: center;"> &nbsp &nbsp &nbsp &nbspMaster art of 3D modeling AutoCAD!</p>
+        <hr>
+        <a class="link" href="C:\Users\shree\Desktop\Git\InternshalaClone\knowmore\autocad3d.html">KNOW MORE</a>
+        <a class="link1">Duration 4 weeks <p class="midline"></p></a>
+      </div>
+    
+      <div class="items">
+        <img class="centre" src="https://trainings.internshala.com/static/images/home/solidworks.jpg" class="centre">
+        <h4 style="text-align: center;">SOLIDWORKS</h4>
+        <p style="text-align: center;">Begin your journey 3D Designer Engineer</p>
+        <hr>
+        <a class="link" href="C:\Users\shree\Desktop\Git\InternshalaClone\knowmore\solidwork.html">KNOW MORE</a>
+        <a class="link1">Duration 6 weeks <p class="midline"></p></a>
+      </div>
+          <div class="items">
+            <img class="centre" src="https://trainings.internshala.com/static/images/home/advanced-solidworks.jpg"/>
+            <h4 style="text-align: center;">Advanced SOLIDWORKS</h4>
+            <p style="text-align: center;">Learn the advanced features to become a certified SOLIDWORKS profesiional.</p>
+            <hr>
+            <a class="link" href="C:\Users\shree\Desktop\Git\InternshalaClone\knowmore\advacncesolid.html">KNOW MORE</a>
+            <a class="link1">Duration 5 weeks <p class="midline"></p></a>
+          </div>
+    </div>
+
+    <p class="head">Design(4)</p>
+    <div class="container">
+      
+      <div class="items">
+        <img class="centre" src="https://trainings.internshala.com/static/images/home/graphic-design.jpg"/>
+        <h4 style="text-align: center;">Graphic Design</h4>
+        <p style="text-align: center;">Design stunning graphic using Adobe Photoshop</p>
+        <hr>
+        <a class="link" href="C:\Users\shree\Desktop\Git\InternshalaClone\knowmore\graphicdesign.html">KNOW MORE</a>
+        <a class="link1">Duration 8 weeks <p class="midline"></p></a>
+      </div>
+      <div class="items">
+        <img src="https://trainings.internshala.com/static/images/home/ui-ux-design.jpg" class="centre"/>
+        <h4 style="text-align: center;">UI/UX Design</h4>
+        <p style="text-align: center;">Master typography,colour,wireframing and more to become a UI/UX designer</p>
+        <hr>
+        <a class="link" href="C:\Users\shree\Desktop\Git\InternshalaClone\knowmore\uiux.html">KNOW MORE</a>
+        <a class="link1">Duration 6 weeks <p class="midline"></p></a>
+      </div>
+    
+      <div class="items">
+        <img class="centre" src="https://trainings.internshala.com/static/images/home/video-editing.jpg" class="centre">
+        <h4 style="text-align: center;">Video Editing</h4>
+        <p style="text-align: center;">Master transitions,visual effects & more in Adobe Premiere edit like a pro!</p>
+        <hr>
+        <a class="link" href="C:\Users\shree\Desktop\Git\InternshalaClone\knowmore\videoedit.html">KNOW MORE</a>
+        <a class="link1">Duration 4 weeks <p class="midline"></p></a>
+      </div>
+          <div class="items">
+            <img class="centre" src="https://trainings.internshala.com/static/images/home/animation.jpg"/>
+            <h4 style="text-align: center;">Animation</h4>
+            <p style="text-align: center;">Master the foundations of animation & more using Adobe After Effects!</p>
+            <hr>
+            <a class="link" href="C:\Users\shree\Desktop\Git\InternshalaClone\knowmore\animation.html">KNOW MORE</a>
+            <a class="link1">Duration 6 weeks <p class="midline"></p></a>
+          </div>
+    </div>
+ <div class="clear"></div>
+    <!-- grid -->
+    <div class="parent">
+        <div>
+            <h3>Internships by places</h3>
+            <h4>Internship in India</h4>
+            <h4>Internship in Delhi</h4>
+            <h4>Internship in Bagalore</h4>
+            <h4>Internship in Hyderabad</h4>
+            <h4>Internship in Mumbai</h4>
+            <h4>Internship in Chennai</h4>
+            <h4>Internship in Gurgaon</h4>
+            <h4>Internship in Kolkata</h4>
+            <h4>Virtual Internship </h4>
+        </div>
+
+        <div>
+            <h3>Internship by Stream</h3>
+            <h4>Computer Science Internship</h4>
+            <h4>Electronics Internship</h4>
+            <h4>Mechanical Internship</h4>
+            <h4>Civil Internship</h4>
+            <h4>Marketing Internship</h4>
+            <h4>Chemical Internship</h4>
+            <h4>Finance Internship</h4>
+            <h4>Summer Research Fellowship</h4>
+            <h4>Campus Ambassador Program</h4>
+        </div>
+
+        <div>
+            <h3 class="offer">Online Trainings</h3>
+            <h4>Programming with Python</h4>
+            <h4>Digital Marketing </h4>
+            <h4>Web Development
+            </h4>
+            <h4>Machine Learning
+            </h4>
+            <h4>Advanced Excel
+            </h4>
+            <h4>Ethical Hacking</h4>
+            <h4>AutoCAD
+            </h4>
+            <h4>Creative Writing</h4>
+            <h4>Data Science</h4>
+        </div>
+
+        <div>
+            <h3>About Internshala</h3>
+            <h4>About us</h4>
+            <h4>We're hiring</h4>
+            <h4>Hire interns for your company</h4>
+            <h4>Team Diary</h4>
+            <h4>Blog</h4>
+            <h4>Our Services</h4>
+            <h4>Terms & Conditions</h4>
+            <h4>Privacy</h4>
+            <h4>Contact us</h4>
+        </div>
+    </div>
+    <hr class="hr">
+    <div class="play"><i class="fab fa-google-play fa-2x" style="color: white;margin-top: 10px;"></i>
+        <a href="https://play.google.com/store/apps/details?id=com.internshala.app&referrer=utm_source%3Dplay_footer" class="playy"> Get Android App</a>
+        </div>
+
+       <div class="icon">
+        <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram fa-2x" id="ic1" ></i></a>
+        <a href="https://www.twitter.com"> <i class="fab fa-twitter fa-2x"id="ic"></i></a>
+        <a href="https://www.youtube.com"><i class="fab fa-youtube fa-2x" id="ic"></i></a>
+        <a href="https://www.linkedin.com"> <i class="fab fa-linkedin-in fa-2x" id="ic"></i></a>
+    </div>
+    <h4 class="copy">© Copyright 2021 Internshala</h4>
+    <!-- grid -->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+
+
+  
+  </body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        background-color: #f0f0f0;
+    }
+    .navbar {
+            overflow: hidden;
+            background-color: #f1f1f1;
+            height: 85px;
+            width: 63%;
+            margin: auto;
+            margin-top: 50px;
+
+        }
+
+        .logo {
+            float: left;
+            text-align: center;
+            padding: 2px 3px;
+            text-decoration: none;
+            margin-left: 120px;
+            padding-top: 10px;
+        }
+
+        .navbar a {
+            float: right;
+            font-size: 16px;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .train {
+            font-size: 15px;
+            color: grey;
+            margin-left: 5px;
+            float: right;
+            padding-top: 17px;
+        }.bot{
+            width: 60%;
+            margin: auto;
+            background-color: white;
+            height: 400px;
+            padding: 25px;
+        }.left{
+            float: left;
+            width: 60%;
+            height:400px ;
+            background-color: #f0f0f0;
+            border-radius: 7px;
+            margin: 0;
+        }.right{
+            float: left;
+            width: 30%;
+            height: 170px;
+            border: 1px solid grey;
+            background-color: #fff7f7;
+            margin-left: 50px;
+            padding: 10px;
+        }.leftone{
+            height: 26px;
+            background-color: #e4e4e4;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 7px;
+        }.lefta{
+            float: left;
+            height: 360px;
+            width: 160px;
+            background-color: burlywood;
+            margin-right: 25px;
+        }.leftb{
+            height: 360px;
+            width: 350px;
+            background-color: #f0f0f0;
+            float: left;
+        }.lefta p{
+            border: 1px solid rgb(204, 197, 197);
+            margin: 0;
+            padding: 10px;
+            background-color: rgb(235, 230, 230);
+        }.in1{
+            width: 342px;
+            height: 25px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }img{
+            margin-bottom: -15px;
+        }.many{
+border: 1px solid orange;
+background-color: #fcf5d5;
+height: 64px;
+            width: 337px;
+            margin-top: 10px;
+            padding: 5px;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }.agree{
+            padding: 10px;
+            font-size: 11px;
+            font-weight: bold;
+        }.inr{
+            color: #259fd2;
+            font-weight: bolder;
+            margin-left: 10px;
+            font-size: 20px;
+            float: left;
+        }.inr1{
+            color: black;
+            font-size: 12px;
+            font-weight: normal;
+            float: right;
+            margin-top: 10px;
+        }.btn1 a{
+            text-decoration: none;
+            color: white;
+        }.btn1{
+            border:1px solid #6bbb69;
+            background-color:#6bbb69;
+            padding: 5px;
+            width: 120px;
+            margin-left: 10px;
+            margin-top: 7px;
+        }.btn2 a{
+            text-decoration: none;
+            color: white;
+        }.btn2{
+            border:1px solid #6bbb69;
+            background-color:#6bbb69;
+            padding: 5px;
+            width: 70px;
+            margin-left: 10px;
+            margin-top: 7px;
+        }#container{
+            position: relative;
+        }#image, #image1{
+            position: absolute;
+            height: 25px;
+            width: 30px;
+            bottom: 28px;
+            left: 270px;
+        }#image1{
+            left: 310px;
+        }.bt1{
+            height: 40px;
+            width: 150px;
+            margin-top: 15px;
+            margin-left: 72%;
+        }
+</style>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://internshala.com/static/images/common/new_internshala_logo.svg" />
+            <div class="train"> TRAININGS</div>
+        </div>
+        </div>
+        <div class="bot">
+            <div class="left">
+                <div class="leftone">Payment Information</div>
+                <div class="lefta">
+                    <p style="border: none;background-color: #f0f0f0;">Credit Cards   &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp    ></p>
+                    <p>Debit Cards</p>
+                    <p>Net banking</p>
+                    <p>Paytm</p>
+                    <p>Wallet</p>
+                    <p>UPI</p>
+                    <p >EMI Options</p>
+                    <p style="border: none;background-color: #f0f0f0;padding-bottom: 69px;"></p>
+                </div>
+                <div class="leftb">
+                    <label >Card Number</label>
+                    <div id="container">
+                    <input type="text" class="in1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH7-f48bfFKP3-puTeCEVhE77W2GbGkFaNjg&usqp=CAU" id="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUrSAW3P8DAScPXnS2Wc6d_IbbZSNd_GlFKQ&usqp=CAU" id="image1">
+                </div>
+                    <label>Expiry Date</label>
+                    <label style="margin-right: 200px;margin: 110px;">CVV</label>
+                  <select style="width: 80px;height: 31px;margin-top: 5px;">
+                      <option>Month</option>
+                      <option>January</option>
+                      <option>February</option>
+                      <option>March</option>
+                      <option>April</option>
+                      <option>May</option>
+                      <option>June</option>
+                      <option>July</option>
+                      <option>August</option>
+                      <option>September</option>
+                      <option>October</option>
+                      <option>November</option>
+                      <option>December</option>
+                  </select>
+                  <select style="width: 80px;height: 31px;margin-top: 5px;">
+                      <option >Year</option>
+                      <option>2021</option>
+                      <option>2022</option>
+                      <option>2023</option>
+                      <option>2024</option>
+                      <option>2025</option>
+                      <option>2026</option>
+                      <option>2027</option>
+                      <option>2028</option>
+                      <option>2029</option>
+                      <option>2030</option>
+                      
+                  </select>
+                    <input style="width: 35px;height: 25px;margin-top: 5px;margin-left: 20px;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWU0YCQDeaD3xts2DF2Ivl2Z7duPH0oiCMdg&usqp=CAU" width="60px" height="35px">
+                   <div class="many">
+                    As per RBI's directive, w.e.f October 01, 2020, any indian debit/credit card not yet used for online e-commerce will be blocked for all online transactions. In case of such failure, please contact your card issuing bank to enable online usage.
+                   </div>
+            <div class="agree">I agree with the Privacy Policy by proceeding with this payment.</div>
+             <div  class="inr">INR 1349.00 <div class="inr1">&nbsp &nbsp(Total Amount Payable)</div></div>
+             <button class="btn1"><a href="C:\Users\shree\Desktop\Git\InternshalaClone\otp.html"> Make Payment</a></button>
+             <button class="btn2" onclick="cancel()"><a href="C:\Users\shree\Desktop\Git\InternshalaClone\homepage.html"> Cancel</a></button>
+                </div>
+            </div>
+
+            <div class="right">
+                <p style="font-weight: bold;font-size: 18px;">ORDER DETAILS <P style="line-height: 0px;font-size: 15px;">Order #:&nbsp &nbsp &nbsp VTCT001U2079664D260821</P></p>
+                <hr>
+                <p>Order Amount &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 1349.00</p>
+                <hr>
+                <p style="font-weight: bold;font-size: 17px;">Total Amount    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp INR 1349.00</p>
+            </div>
+        </div>
+        <div><img src="https://secure.ccavenue.com/images/CCAV.png" class="bt1"></div>
+</body>
+</html>
+<script>
+    function cancel(){
+        alert("This will cancel your Purchase!")
+    }
+</script>
